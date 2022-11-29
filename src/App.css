@@ -7,11 +7,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -28,11 +23,34 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slider{
+  max-width: 1000px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.card audio{
+  max-width: 90%;
+  height:40px;
+}
+
+.card div{
+  margin: 10px 0
+}
+.slider .title a{
+  text-decoration: none;
+  color:white;
+}
+.slider .card{
+  max-width:300px;
+  padding: 20px 0px;
+  border:solid red 2px;
+  font-size: 70%;
+}
+
+.slider .card img{
+  height:200px;
+}
+
+.card .subtitle{
+  color:rgb(145, 145, 145);
 }
