@@ -1,3 +1,21 @@
+h1{
+  margin:0;
+}
+
+nav{
+  height:50px;
+  display:flex;
+  justify-content: space-between;
+  padding:10px 20px 0px 20px;
+  
+}
+nav a{
+  font-family: "Comfortaa",cursive;
+  font-size: 30px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
 }
@@ -9,25 +27,19 @@
 
 .App-header {
   background: rgb(99,85,34);
-background: radial-gradient(circle, rgba(99,85,34,1) 0%, rgba(0,0,0,1) 100%);
+  background: radial-gradient(circle, rgba(99,85,34,1) 0%, rgba(0,0,0,1) 100%);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 .slider{
   max-width: 1000px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display:flex;
+  justify-content: center;
   animation: fadeIn 1s;
+  margin:auto;
 }
 
 .card audio{
@@ -38,6 +50,12 @@ background: radial-gradient(circle, rgba(99,85,34,1) 0%, rgba(0,0,0,1) 100%);
 .card div{
   margin: 10px 0
 }
+
+.heading{
+  margin: 50px;
+  font-family: 'Comfortaa', cursive;
+}
+
 .slider .title a{
   text-decoration: none;
   color:white;
@@ -70,3 +88,4 @@ background: radial-gradient(circle, rgba(99,85,34,1) 0%, rgba(0,0,0,1) 100%);
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
