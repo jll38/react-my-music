@@ -4,7 +4,8 @@ import ReactDOM from "react-dom";
 export default class Cards extends React.Component {
     render() {
         return (
-            <div className='slider'>
+            <>
+            <div className='slider owl-carousel'>
                 <div className="card">
                     <div className="card-img">
                         <img src="https://i1.sndcdn.com/artworks-RKPowWhzXAEUb3lK-rjLhdg-t200x200.jpg"></img>
@@ -38,8 +39,11 @@ export default class Cards extends React.Component {
                         <div className="song-player"><audio controls><source src="music/Order 66 - The Finale.mp3" type="audio/mp3"></source></audio></div>
                     </div>
                 </div>
-
             </div>
+            <script>
+      
+    </script>
+            </>
         );
     }
 }
