@@ -35,11 +35,13 @@ nav a{
 
 .slider{
   max-width: 1000px;
+  width: 45.45%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display:flex;
   justify-content: center;
   animation: fadeIn 1s;
   margin:auto;
+  overflow:hidden
 }
 
 .card audio{
