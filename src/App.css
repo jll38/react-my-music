@@ -7,9 +7,9 @@
   pointer-events: none;
 }
 
-
 .App-header {
-  background-color: #282c34;
+  background: rgb(99,85,34);
+background: radial-gradient(circle, rgba(99,85,34,1) 0%, rgba(0,0,0,1) 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,9 @@
 
 .slider{
   max-width: 1000px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display:flex;
+  animation: fadeIn 1s;
 }
 
 .card audio{
@@ -39,18 +41,32 @@
 .slider .title a{
   text-decoration: none;
   color:white;
+  text-shadow:#1b1b27 3px 2px 2px;
 }
 .slider .card{
-  max-width:300px;
-  padding: 20px 0px;
-  border:solid red 2px;
+  max-width:250px;
+  padding: 0 0 20px 0;
   font-size: 70%;
+  flex: 1;
+  margin: 0 1%;
+  background-color: rgba(5, 5, 8, 0.4);
+  box-shadow: rgba(5, 5, 8, 0.4) 3px 3px 4px;
 }
 
+.slider .card .card-img{
+  margin-top:0;
+}
 .slider .card img{
-  height:200px;
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
 }
 
 .card .subtitle{
   color:rgb(145, 145, 145);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
